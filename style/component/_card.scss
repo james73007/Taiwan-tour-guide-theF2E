@@ -1,0 +1,61 @@
+.card{
+    &-activity-font{
+        font-size: 15px;
+    }
+    &-activity-date-font{
+        font-size: 12px;
+    }
+    &-description{
+        font-size: 11px;
+    }
+    &-titleFont{
+        font-size: 18px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .card-activity-font{
+        font-size: 22px;
+    }
+    .card-activity-date-font{
+        font-size: 16px;
+    }
+}
+@include media-breakpoint-down(lg) { 
+    .card-activity-spacing{
+        padding-top: 0;
+        padding-bottom: 0;
+        // position: 30px;
+    }
+}
+.cardWrap{
+    padding: 0px 16px;
+}
+@include media-breakpoint-up(lg) {
+    .cardWrap{
+        padding: 16px 30px;
+    }
+}
+
+// hover 圖片時放大
+.cardWrap:hover img{
+    transform: scale(1.1);
+}
+.img-transition{
+    transition: all .3s;
+}
+.category:hover img{
+    transform: scale(1.1);
+}
+
+.card-activity-spacing{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    // position: 30px;
+}
+.card-bg{
+    background: #f9f9f9;
+}
+.card-radius{
+    border-radius: 12px 0 0 12px;
+}

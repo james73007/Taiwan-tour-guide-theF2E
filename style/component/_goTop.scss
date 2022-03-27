@@ -1,0 +1,14 @@
+.goTop{
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    transform: translateX(0);
+    transition: transform .3s;
+    &.hide{
+        transform: translateX(200%);
+    }
+    a{
+        cursor: pointer;
+    }
+}

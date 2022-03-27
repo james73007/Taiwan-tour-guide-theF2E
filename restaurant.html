@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar  navbargg  navbar-expand-lg navbar-light bg-white ">
+        <div class="container">
+          <div class="">
+            <a class="navbar-brand d-none d-md-block" href="index.html">
+              <img src="./img/Logo-desktop.png" alt="logo_desktop">
+            </a>
+            <a class="navbar-brandd d-md-none ms-auto" href="index.html">
+              <img src="./img/Logo-mobile.png" alt="">
+            </a>
+          </div>
+          <button class="navbar-toggler js-clicK-btn p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="./img/menu-mobile.png" class="ms d-block" alt="">
+              <img src="./img/menu-mobile-close.png" class="mc d-none" alt="">
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="ScenicSpot.html">探索景點</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activity.html">節慶活動</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html">品嚐美食</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <div class="container d pt-5 pt-lg-8 pb-8 pb-lg-9">
+      <nav aria-label="breadcrumb mb-4 mb-lg-6 ">
+        <ol class="breadcrumb ">
+          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item " aria-current="page">品嘗美食</li>
+        </ol>
+      </nav>
+      <section class="row mb-5 mb-lg-8">
+        <div class="col-lg-3">
+          <select name="" id="" class="foodCity form-select py-3 mb-2 mb-lg-0">
+            <option value="">全部縣市</option>
+            <option value="NewTaipei">新北市</option>
+            <option value="Taipei">台北市</option>
+            <option value="Taoyuan">桃園市</option>
+            <option value="Taichung">台中市</option>
+            <option value="Tainan">台南市</option>
+            <option value="Hsinchu">新竹市</option>
+            <option value="Keelung">基隆市</option>
+            <option value="HsinchuCounty">新竹縣</option>
+            <option value="MiaoliCounty">苗栗縣</option>
+            <option value="ChanghuaCounty">彰化縣</option>
+            <option value="YunlinCounty">雲林市</option>
+            <option value="NantouCounty">南投市</option>
+            <option value="ChiayiCounty">嘉義縣</option>
+            <option value="Chiayi">嘉義市</option>
+            <option value="PingtungCounty">屏東縣</option>
+            <option value="YilanCounty">宜蘭縣</option>
+            <option value="HualienCounty">花蓮縣</option>
+            <option value="TaitungCounty">台東縣</option>
+            <option value="KinmenCounty">金門縣</option>
+            <option value="PenghuCounty">澎湖縣</option>
+            <option value="LienchiangCounty">連江縣</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select name="" id="" class=" form-select py-3 mb-2 mb-lg-0">
+            <option value="">全部分類</option>
+            <option class="py-3" value="地方特產">地方特產</option>
+            <option class="py-3" value="中式美食">中式美食</option>
+            <option class="py-3" value="甜點冰品">甜點冰品</option>
+            <option class="py-3" value="異國料理">異國料理</option>
+            <option class="py-3" value="伴手禮">伴手禮</option>
+            <option class="py-3" value="新竹市">新竹市</option>
+            <option class="py-3" value="素食">素食</option>
+          </select>
+        </div>
+        <div class="col-lg-4">
+          <input type="search" name="" class=" foodKeyword form-control  py-3 mb-2 mb-lg-0 bg-searchInput" id="" placeholder="你想吃什麼？請輸入關鍵字">
+        </div>
+        <div class="col-lg-3">
+          <button type="button" class="form-control search searchFood btn btn-primary text-white py-3 mb-2 mb-lg-0 hover-searchBtn"><i class="fas fa-search"></i>  <span class="fw-bold">搜尋</span> </button>
+        </div>
+      </section>
+
+      <section class="row gy-3 foodList mb-9">
+        <h2 class="fs-3 fs-lg-2 fw-lighter mb-3 mb-lg-4 mb-lg-3" >熱門分類</h2> 
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <a href="#" class="position-relative text-white category d-block">
+            <div class="overflow-hidden radius-24">
+              <img data-foodcategory="地方特產" src="./img/unsplash_bRdRUUtbxO0.png" alt="" class="w-100  img-transition">
+            </div>
+            <p  class="position-absolute top-50 start-50 translate-middle fw-bold  fs-lg-3">地方特產</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <a href="#" class="position-relative text-white category d-block">
+            <div class="overflow-hidden radius-24">
+              <img  data-foodcategory="中式美食" src="./img/unsplash_jFu2L04tMBc.png" alt="" class="w-100  img-transition">
+            </div>
+            <p class="position-absolute top-50 start-50 translate-middle fw-bold  fs-lg-3">中式美食</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <a href="#" class="position-relative text-white category d-block">
+            <div class="overflow-hidden radius-24">
+              <img data-foodcategory="甜點冰品" src="./img/unsplash_LI368L2RZno.png" alt="" class="w-100 img-transition">
+            </div>
+            <p  class="position-absolute top-50 start-50 translate-middle fw-bold  fs-lg-3">甜點冰品</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <a href="#" class="position-relative text-white  category d-block">
+            <div class="overflow-hidden radius-24">
+              <img data-foodcategory="異國料理"  src="./img/unsplash_b-2uxjTcxH0.png" alt="" class="w-100  img-transition">
+            </div>
+            <p  class="position-absolute top-50 start-50 translate-middle fw-bold  fs-lg-3">異國料理</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <a href="#" class="position-relative text-white category d-block">
+            <div class="overflow-hidden radius-24">
+              <img data-foodcategory="伴手禮" src="./img/unsplash_CnrDuY0tFrg.png" alt="" class="w-100  img-transition">
+            </div>
+            <p  class="position-absolute top-50 start-50 translate-middle fw-bold  fs-lg-3">伴手禮</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <a href="#" class="position-relative text-white category d-block">
+            <div class="overflow-hidden radius-24">
+              <img data-foodcategory="素食" src="./img/unsplash_4MEL9XS-3JQ.png" alt="" class="w-100  img-transition">
+            </div>
+            <p  class="position-absolute top-50 start-50 translate-middle fw-bold  fs-lg-3">素食</p>
+          </a>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col">
+          <nav aria-label="Page navigation ">
+            <ul class="pagination flex-wrap justify-content-center js-pagination">
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="goTop">
+        <a href="#" title="回到最上方" class=" js-goTop"><i class="fa-solid fa-arrow-up fa-3x"></i></a>
+      </div>
+    </div>
+    <footer class="bg-secondary  text-center text-white py-4">
+      <p>
+        #The F2E 3rd Week01   
+      </p>
+      <p>
+        design by Breakfast /
+        code by roger
+      </p>
+      <p>資料來源: TDX交通部資料平台</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+    <script src="js/restaurant.js"></script>
+</body>
+</html>

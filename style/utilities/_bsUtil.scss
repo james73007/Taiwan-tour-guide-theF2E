@@ -150,7 +150,7 @@ $utilities: map-merge(
     // scss-docs-start utils-sizing
     "width": (
       property: width,
-      responsive: true,
+      responsive : true,
       class: w,
       values: (
         25: 25%,
@@ -177,7 +177,8 @@ $utilities: map-merge(
     ),
     "height": (
       property: height,
-      responsive:true,
+      responsive : true,
+      state : hover,
       class: h,
       values: (
         25: 25%,
@@ -185,7 +186,10 @@ $utilities: map-merge(
         75: 75%,
         100: 100%,
         auto: auto,
-        400: 400px,
+        185 : 185px,
+        200 : 200px,
+        250 : 250px,
+        400 : 400px,
       )
     ),
     "max-height": (
@@ -330,7 +334,7 @@ $utilities: map-merge(
       values: map-merge($spacers, (auto: auto))
     ),
     "margin-top": (
-     
+      responsive: true,
       property: margin-top,
       class: mt,
       values: map-merge($spacers, (auto: auto))
@@ -449,7 +453,7 @@ $utilities: map-merge(
     ),
     "font-size": (
       rfs: true,
-      responsive: true,
+      responsive : true,
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -627,6 +631,12 @@ $utilities: map-merge(
         visible: visible,
         invisible: hidden,
       )
+    ),
+    "ratio": (
+      property: --bs-aspect-ratio,
+      class: ratio,
+      responsive: true,
+      values: ($aspect-ratios),
     )
     // scss-docs-end utils-visibility
   ),

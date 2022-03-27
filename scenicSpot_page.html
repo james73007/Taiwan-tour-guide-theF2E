@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./style/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light z-999">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
         <div class="container">
           <a class="navbar-brandd   d-md-none   " href="index.html">
             <img src="./img/Logo-mobile.png" alt="logo_mobile">
@@ -26,34 +26,44 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="ScenicSpot.html">探索景點</a>
+                <a class="nav-link " aria-current="page" href="ScenicSpot.html">探索景點</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="activity.html">節慶活動</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="food.html">品嚐美食</a>
+                <a class="nav-link" href="restaurant.html">品嚐美食</a>
               </li>
           </div>
         </div>
       </nav>
-
-
-    <div class="container">
-
+    <div class="container pt-5  pb-9 pt-lg-9 pb-lg-10">
         <div class="scenicspot_list"></div>
-
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h3 class="fs-3 fs-lg-2 fw-lighter letter-spacing">還有這些不能錯過的景點</h3>
+          <a href="ScenicSpot.html" class="text-danger fw-normal">更多景點
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 3.5L10 8L6 12.5" stroke="#FF725E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
         <!-- 更多景點 swiper -->
         <div class="swiper js-scenicspot">
             <div class="swiper-wrapper js-scenicspotSwipper">
             </div>
         </div>
-
-
     </div>
-    <div class=" bg-success text-center text-white py-4">
-        #The F2E 3rd Week01 #Breakfast  
-    </div>
+    <!-- footer -->
+    <footer class="bg-secondary text-center text-white py-4">
+      <p>
+        #The F2E 3rd Week01   
+      </p>
+      <p>
+        design by Breakfast /
+        code by roger
+      </p>
+      <p>資料來源: TDX交通部資料平台</p>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
